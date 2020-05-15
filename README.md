@@ -1,2 +1,2 @@
 # msscript
-Microsoft JScript/VBScript Module for VFP
+Microsoft JScript/VBScript Module for VFPx
