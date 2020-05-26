@@ -4,7 +4,7 @@ Microsoft JScript/VBScript Module for VFPx (includes CryptoJS as sample)
 Usage: Run JavaScript/VBScript code in VFPx
 
 ```
-** Initialize Modules:
+** Initialize Module:
 DO MSSCRIPT
 
 ** Encrypt String using CryptoJS:
@@ -13,7 +13,7 @@ EncryptedStr = MSSCR_EncryptAES("String to Encrypt","Encryption Key")
 ** Decrypt String using CryptoJS:
 DecryptedStr = MSSCR_DecryptAES(EncryptedStr,"Encryption Key")
 
-** Sample Function:
+** Sample Function to run JavaScript Code:
 FUNCTION JSFunc
 PARAMETERS n1,n2
 
@@ -30,7 +30,7 @@ PARAMETERS n1,n2
 
   ** RUN JAVASCRIPT CODE:
   PRIVATE RetVal
-  RetVal = MSSCR_Exec(c_Code,o_Var)  && Run c_Code and update o_Var (as _VAR in JS).
+  RetVal = MSSCR_Exec(c_Code,o_Var)  && Run c_Code and update o_Var (as _VAR in JavaScript Code).
   RELEASE o_Var
 
 RETURN (RetVal)
